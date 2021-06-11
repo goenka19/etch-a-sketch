@@ -60,7 +60,10 @@ function deletegrid()
 var btnnumber = document.querySelector('#number');
 btnnumber.addEventListener('click', ()=>
 {
-    num = 1;
+    if (num == 0)
+        num = 1;
+    else
+        num = 0;
     deletegrid();
     grid(size);
 })
